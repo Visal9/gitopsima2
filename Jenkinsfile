@@ -16,7 +16,7 @@ node {
                         sh "git config user.name Imantha"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+raj80dockerid/test.*+raj80dockerid/test:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+imantha95/doc.*+imantha95/doc:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh  "git pull"
                         sh "git add ."
